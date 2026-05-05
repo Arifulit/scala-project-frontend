@@ -1,5 +1,5 @@
 // API endpoint configuration
-const rawApiBase = import.meta.env.VITE_API_URL;
+const rawApiBase = import.meta.env.VITE_API_URL ?? '';
 
 export const API = rawApiBase.replace(/\/+$/, '');
 
